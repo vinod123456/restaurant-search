@@ -69,6 +69,7 @@ export default class Home extends React.Component{
             data=>this.setState({restaurants:data,isLoading:!this.state.isLoading,buttonDisable:true})
             )
     }
+    
 
     restaurants=()=>{
         return this.state.restaurants.map(restaurant=>
