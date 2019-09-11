@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+
+.app-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  Padding:20px;
+  margin-bottom: 10px;
+  /* justify-content: center; */
+
+  color: white;
+}
+
+.form-inline{
+  margin-top:20px;
+}
+
+.container{
+  max-width: 850px;
+}
+
+.rating {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.label-info {
+  background-color: green;
+}
+.card-horizontal{
+  display: flex;
+  flex:1 1 auto
+}
+.card-body{
+  padding:0.5rem
+}
+.image{
+  width:100px;
+  height:inherit;
+  padding:5px;
+  margin-right: 10px;
+  border-radius: 0.5rem
+}
+.card{
+  margin-top: 10px
+}
+
