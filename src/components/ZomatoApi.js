@@ -4,7 +4,7 @@ const apiKey='7ff8d1535bd586e18e9698d9fdca0037';
 
 export default class ZomatoApi{
 
-    
+    //get entity id with city input
 
     static getEntityId(city,callback){
         axios.get('https://developers.zomato.com/api/v2.1/locations',{
@@ -41,6 +41,8 @@ export default class ZomatoApi{
     //     console.log(entityId);
     // }
 
+       //get Restaurants
+    
     static  getRestaurants(userInput,callback){
         // console.log(userInput);
         // await this.getEntityId(userInput.city,(id)=>userInput.entityId=id)
