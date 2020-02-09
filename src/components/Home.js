@@ -23,9 +23,10 @@ export default class Home extends React.Component{
             buttonDisable:true
         }
     }
+    
+    //handle user input 
 
     onUserInput(event){
-        event.preventDefault();
         if(event.target.name==="entityId"){
             ZomatoApi.getEntityId(event.target.value,
                 id=>this.setState(prevState=>({
@@ -56,8 +57,10 @@ export default class Home extends React.Component{
         
         
     }
-
-    async onInputSubmit(event){
+        
+    //handle submit. Get restaurants from Zomato Api
+    
+    onInputSubmit(event){
         event.preventDefault();
 
         this.setState({restaurants:[],isLoading:!this.state.isLoading});
